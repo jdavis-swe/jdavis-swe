@@ -1,9 +1,13 @@
-# Joel Davis
+## Joel Davis
 
-**Senior Backend Engineer**
+I solve hard problems in distributed systems and backend architecture.
 
-Specializing in building robust backend systems, API architecture, and database optimization.
+**Problems I've solved**:
+- Scaling databases to handle billions of records
+- Optimizing APIs for high concurrency
+- Designing fault-tolerant microservices
+- Building reliable data pipelines
 
-**Core Competencies**: Backend system design, REST/GraphQL APIs, database architecture, performance optimization, distributed systems
+**Approach**: Deep thinking about system constraints, performance testing, iterative optimization
 
-**Technologies**: Python, Go, Java, PostgreSQL, MongoDB, Redis, Elasticsearch, AWS, Kubernetes
+**Stack**: Python, Go, Java, PostgreSQL, Elasticsearch, Kafka, AWS
