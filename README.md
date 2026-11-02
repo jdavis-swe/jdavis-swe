@@ -1,19 +1,33 @@
-# I am Joel Davis
+## Joel Davis
 
-**Senior Software Engineer**
+**ML Data Infrastructure**
 
-## Focus Areas
-Backend Architecture, Systems Design, ML Infrastructure, Model Serving, Feature Stores
+### System Architecture
 
-## ML Experience
-- Built scalable model serving infrastructure supporting 50+ concurrent ML models across microservices
-- Designed and implemented feature store system reducing feature engineering time by 70%
-- Optimized database schemas and indexing for ML training data pipelines, improving throughput 5x
-- Architected monitoring and observability systems for ML model performance and data drift detection
+```
+Raw Data → Validation → Feature Computation → Feature Store
+                            ↑
+                     Historical Data
+                            ↓
+                      Training Pipeline
+                            ↓
+                       Model Registry
+                            ↓
+                      Model Serving
+                            ↓
+                      Monitoring Layer
+```
 
-## Connect
-- GitHub: [@jdavis-swe](https://github.com/jdavis-swe)  
-- LinkedIn: [Profile](https://linkedin.com/in/jdavis-swe)
+### Built Solutions
+- Feature store supporting 10,000+ features
+- Sub-millisecond feature retrieval
+- Automated feature quality validation
+- Data lineage tracking
+- Model performance monitoring
 
----
-*Building solutions that matter.*
+**Scale:** 100TB+ feature data, 1M+ daily requests
+
+### Key Insight
+The bottleneck is data, not algorithms. Good data + simple models > bad data + complex models.
+
+**Focus:** Making data engineering invisible so data scientists can focus on ML.
