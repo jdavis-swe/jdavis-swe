@@ -1,23 +1,9 @@
-# I am Joel Davis
+# Joel Davis
 
-![GitHub followers](https://img.shields.io/github/followers/jdavis-swe?style=social)
-![Status](https://img.shields.io/badge/Looking_for-Opportunities-brightgreen)
+**Senior Backend Engineer**
 
-## 🛠️ Technical Skills
-Backend Architecture, Systems Design, Scalability
+Specializing in building robust backend systems, API architecture, and database optimization.
 
-## 🎯 Specialization
-Enterprise Backend Development
+**Core Competencies**: Backend system design, REST/GraphQL APIs, database architecture, performance optimization, distributed systems
 
-## 📊 What I Do
-- Architect scalable systems
-- Write maintainable code
-- Lead technical initiatives
-- Share knowledge with teams
-
-## 🔗 Profiles
-- **GitHub**: [@jdavis-swe](https://github.com/jdavis-swe)
-- **LinkedIn**: [View Profile](https://linkedin.com/in/jdavis-swe)
-
----
-*Engineer | Problem Solver | Tech Enthusiast*
+**Technologies**: Python, Go, Java, PostgreSQL, MongoDB, Redis, Elasticsearch, AWS, Kubernetes
