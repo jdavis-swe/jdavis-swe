@@ -1,33 +1,27 @@
-## Joel Davis
+I am Joel Davis
 
-**ML Data Infrastructure**
+**ML Data Infrastructure Engineer**
 
-### System Architecture
+Built comprehensive data infrastructure supporting machine learning operations at enterprise scale.
 
-```
-Raw Data → Validation → Feature Computation → Feature Store
-                            ↑
-                     Historical Data
-                            ↓
-                      Training Pipeline
-                            ↓
-                       Model Registry
-                            ↓
-                      Model Serving
-                            ↓
-                      Monitoring Layer
-```
-
-### Built Solutions
+**System Components:**
 - Feature store supporting 10,000+ features
 - Sub-millisecond feature retrieval
-- Automated feature quality validation
-- Data lineage tracking
-- Model performance monitoring
+- Automated feature validation and quality monitoring
+- Complete data lineage tracking
+- Real-time model performance monitoring
 
-**Scale:** 100TB+ feature data, 1M+ daily requests
+**Scale Metrics:**
+- 100TB+ feature data storage
+- 1M+ daily feature requests
+- 99.9% uptime SLA
+- Petabyte-scale data pipelines
 
-### Key Insight
-The bottleneck is data, not algorithms. Good data + simple models > bad data + complex models.
+**Architecture Design:**
+- Data ingestion and validation layers
+- Transformation and feature engineering
+- Model training infrastructure
+- Serving and inference systems
+- Monitoring and alerting
 
-**Focus:** Making data engineering invisible so data scientists can focus on ML.
+Core insight: Data quality is the primary constraint. Good data with simple models beats bad data with complex algorithms. Mission: Make data engineering invisible so scientists focus on modeling.
