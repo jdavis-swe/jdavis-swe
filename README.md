@@ -1,4 +1,4 @@
-# Joel Davis
+## Joel Davis
 
 **Senior Backend Engineer & Architect**
 
