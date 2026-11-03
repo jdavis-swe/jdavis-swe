@@ -1,105 +1,63 @@
-# Joel Davis
+<h1>Joel Davis <sub><sub>senior ai platform engineer</sub></sub></h1>
 
-**ML Data Infrastructure Engineer**
 
-## Mission
+I build production AI systems: **agentic workflows**, **retrieval-augmented generation**, and the **backend platforms** that take them from prototype to production.
 
-Building the hidden infrastructure that makes machine learning possible. Good data engineering is invisible—it just works.
 
-## Platform Architecture
-
-### 🏢 Complete System
-
+```mermaid
+mindmap
+  root((practical AI))
+    Generative AI
+      structured outputs
+      guardrails
+      cost-aware models
+    RAG
+      hybrid search
+      reranking
+      grounded answers
+    Agents
+      tools and state
+      retries
+      human approval
+    Platform and MLOps
+      AWS and Kubernetes
+      evaluation
+      deployment
+    Computer vision
+      classification
+      detection
+    Conversational AI
+      intents and entities
+      multi-turn context
 ```
-Raw Data Input
-    ↓
-Ingestion Pipeline (validation, transformation)
-    ↓
-Data Warehouse (storage, organization)
-    ↓
-Feature Computation (transformation, aggregation)
-    ↓
-Feature Store (retrieval, versioning)
-    ↓
-Training Data (sampling, splitting)
-    ↓
-Model Training (experimentation)
-    ↓
-Model Registry (versioning, metadata)
-    ↓
-Model Serving (inference, caching)
-    ↓
-Monitoring Layer (quality, drift detection)
-```
 
-## Scale Metrics
 
-**Data Volume:** 100TB+ feature data, petabyte-scale pipelines
+#### Built and running
 
-**Throughput:** 1M+ feature requests daily
 
-**Availability:** 99.9% uptime SLA
+🗓️ **Care Agent** · a scheduling agent that checks records and coverage, drafts the booking, then waits for a care coordinator's approval<br><sup>`LangGraph` `FastAPI` `PostgreSQL`</sup>
 
-**Latency:** Sub-millisecond feature retrieval
 
-## Core Components
+📄 **DocFlow** · reads scanned claim forms, extracts the fields that matter, and routes low-confidence ones to a reviewer<br><sup>`Textract` `Celery` `Lambda`</sup>
 
-### Feature Store
 
-Central repository for computed features enabling reproducible training and consistent serving.
+🧪 **EvalBench** · scores every retrieval and prompt change against a fixed question set and blocks the merge if quality drops<br><sup>`Ragas` `MLflow` `Databricks`</sup>
 
-**Capabilities:**
-- 10,000+ features across domains
-- Historical data for time-series features
-- Point-in-time correctness (critical for training)
-- Real-time retrieval for inference
-- Data quality validation
-- Automatic versioning
 
-**Value:** Eliminates training-serving skew, enables rapid experimentation, ensures data consistency
+🏠 **RoomSense** · classifies rooms and detects amenities in listing photos, turning images into searchable metadata<br><sup>`TensorFlow` `Keras` `Kubernetes`</sup>
 
-### Data Pipeline
 
-Automated ETL (Extract, Transform, Load) handling raw data through quality checks and transformation.
+💬 **Converse** · turns free-form requests into intents, entities and a next action, follow-ups included<br><sup>`PyTorch` `spaCy` `gRPC`</sup>
 
-**Features:**
-- Fault tolerance and retry logic
-- Schema evolution handling
-- Data quality validation
-- Lineage tracking (where does each feature come from?)
-- Automated alerting on anomalies
 
-### Quality Monitoring
+🧭 **Vector Atlas** · semantic search with a visual explorer that shows how documents cluster and why a result matched<br><sup>`pgvector` `LlamaIndex` `React`</sup>
 
-Detecting data issues before they impact models.
 
-**Monitors:**
-- Schema changes
-- Missing values spikes
-- Outlier detection
-- Statistical drift
-- Correlation changes
+#### A little about me
 
-**Response:** Automated alerts, manual investigation, pipeline restart if needed
 
-## Key Insight
+12+ years as an AI and software engineer at startups and large tech companies. I care about practical AI: systems that leave the prototype stage, scale cleanly, and get built in close collaboration with the people who use them.
 
-Data quality is the primary constraint on ML systems. Good data + simple models beats bad data + complex algorithms. Investing in data infrastructure provides exponential returns.
 
-## Common Mistakes
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" /> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langgraph&logoColor=white" /> <img src="https://img.shields.io/badge/LlamaIndex-000000?style=flat" /> <img src="https://img.shields.io/badge/pgvector-4169E1?style=flat&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" /> <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white" />
 
-**Treating data as an afterthought:** Data determines model ceiling, not algorithms.
-
-**Skipping validation:** Garbage in, garbage out. Validation prevents silent failures.
-
-**No versioning:** Knowing what data trained what model is essential.
-
-**Ignoring drift:** Data changes over time. Models degrade if features shift.
-
-## Technical Stack
-
-Spark, Airflow, Delta Lake, Flink, Data warehouses, Feature stores, Monitoring tools, Python, SQL
-
----
-
-*The foundation of machine learning.*
